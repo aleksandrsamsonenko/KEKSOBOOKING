@@ -2,6 +2,7 @@
 import {randomNumber, getElementFromArr} from './modules/util.js';
 import {message} from './modules/data.js';
 import {renderPicture} from './modules/picture.js';
+import {reviewPicture} from './modules/review.js';
 
 export let arr = new Array(25).fill().map((u,index) => ({
   id: index,
@@ -17,4 +18,5 @@ export let arr = new Array(25).fill().map((u,index) => ({
 }));
 
 renderPicture(arr);
+reviewPicture(arr);
 
